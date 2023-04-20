@@ -4,38 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html Lists</title>
+    <title>Table Tags</title>
+    <style>
+        body{
+            border: 0;
+        }
+      table, th, td{
+            border: 1px solid black;
+        }
+
+    </style>
 </head>
 <body>
-    <ol type="i"> This is a Ordered List
-        <li>mango</li>
-        <li>orange</li>
-        <li>papaya</li>
-        <li>lichi</li>
-        <li>guava</li>
-        <li>pineapple</li>
-    </ol>
-    <ul> This is a Unorderd List
-        <li>Coffee</li>
-        <li>Cold Coffee</li>
-        <li>Nescafe</li>
-    </ul>
-    <dl> This is a Definition List
-        <dt>cofee</dt>
-        <dd>cold Coffee</dd>
-        <dd>Nescafe</dd>
-        <dd>Hot Coffee</dd>
-    </dl>
-    <p>Some types of Tags in html</p>
-    <em>its a emphasize tag</em><br>
-    <i>its a italic tag</i><br>
-    <b>ita a bold tag</b><br>
-    <strong>its a strong tag</strong><br>
-    <p>I am <mark>Green</mark> Code.</p>
-    <p>This is a <small>Small</small> Tag</p>
-    <p>This is a <del>Delete </del>Tag</p>
-    <p>This is inserted <ins>Tag</ins> </p>
-    <p> This is Subscript tag CO<sub>2</sub></p>
-    <p>This is Superscript tag 12<sup>th</sup></p> 
+    <table>
+        <thead>
+            <tr>
+                <td>MONTH</td>
+                <td>SAVINGS</td>
+                <td>Expanditure</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>January</td>
+                <td>100$</td>
+                <td>40$</td>
+            </tr>
+            <tr>
+                <td>Feburary</td>
+                <td>50$</td>
+                <td>60$</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Sum</td>
+                    <td>110$</td>
+                    <td>100$</td>
+                </tr>
+            </tfoot>
+        
+    </table>
+    <h1>Rowspan and Colspan</h1>
+    <table border="2px" cellpadding="2">
+        <tr>
+            <th>Column 1 header</th>
+            <th>Column 2 header</th>
+        </tr>
+        <tr>
+            <td colspan="2"> Row 1 Col 1</td>
+        </tr>
+        <tr><td rowspan="2">Row 2 col 1</td>
+        <td>Row 2 Col 2</td>
+        </tr>
+        <tr><td>Row 3 Col 2</td></tr>
+    </table>
+        
+        </tr>
+    </table>
+   
+    <h1>HTML TABLES</h1>
+    <table id="abc" cellpadding="2" width="100%" >
+        <tr><td colspan="8" align="center">STUDENT DATA TABLE</td></tr>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Student Id</th>
+            <th>Student Name</th>
+            <th>Roll No.</th>
+            <th>Mo. No.</th>
+            <th>Email Id</th>
+            <th>Degree</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>110926</td>
+            <td>Anuj Pal</td>
+            <td>TCA2001022</td>
+            <td>99999999999</td>
+            <td>abc123@gmail.com</td>
+            <td>Bachelor Of Computer Application</td>
+            <td>Dalpatpur Moradabad</td>
+        </tr>
+        <tr>
+        <td>2.</td>
+        <td>212544</td>
+        <td>Anshul Saini</td>
+        <td>TCA2001018</td>
+        <td>213564572564</td>
+        <td>cba@gmail.com</td>
+        <td>Bachelor Of Computer Application</td>
+        <td>Chandausi Sambhal</td>
+    </tr>
+
+    </table>
+    <a href="index.html">Go back</a>
+    
 </body>
 </html>
